@@ -1,0 +1,126 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: "kaushan";
+  src:
+    url("fonts/kaushanscript-regular-webfont.woff") format("woff"),
+    url("fonts/kaushanscript-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 5em 0;
+  display: flex;
+  background-image: linear-gradient(
+    to bottom,
+    oklch(21% 0.034 264.665),
+    oklch(37.3% 0.034 259.733)
+  );
+  justify-content: center;
+  height: 100vh;
+}
+* {
+  color: white;
+}
+
+.content {
+  width: 50em;
+  height: 100%;
+  border: 0.1em solid oklch(12.964% 0.02739 261.707 / 0.514);
+  border-radius: 0.5em;
+  background-color: oklch(70.708% 0.02244 261.79 / 0.366);
+}
+
+.searchSection {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+header {
+  font-size: 4rem;
+  display: flex;
+  gap: 0.5em;
+  font-family: "kaushan";
+  align-items: center;
+}
+
+img {
+  height: 1em;
+}
+
+.location {
+  color: black;
+  text-align: center;
+  border: 0.1em solid rgba(0, 0, 0, 0.581);
+  border-radius: 0.3em;
+}
+
+.search {
+  color: black;
+}
