@@ -1,4 +1,10 @@
 import "./styles.css";
-import getData from "./apiHandler";
+import getWeatherData from "./apiHandler";
 
-getData();
+const locationInput = document.querySelector(".location");
+const searchButton = document.querySelector(".search");
+
+searchButton.addEventListener("click", () => {
+  const location = locationInput.value;
+  getWeatherData(location);
+});
