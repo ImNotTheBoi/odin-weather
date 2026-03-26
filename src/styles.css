@@ -73,27 +73,17 @@ h6 {
 body {
   padding: 5em 0;
   display: flex;
-  background-image: linear-gradient(
-    to bottom,
-    oklch(21% 0.034 264.665),
-    oklch(37.3% 0.034 259.733)
-  );
+  background-image: linear-gradient(to bottom, #4d6da3, #1d293d);
   justify-content: center;
   height: 100vh;
 }
+
 * {
   color: white;
 }
 
 .content {
   width: 50em;
-  height: 100%;
-  border: 0.1em solid oklch(12.964% 0.02739 261.707 / 0.514);
-  border-radius: 0.5em;
-  background-color: oklch(70.708% 0.02244 261.79 / 0.366);
-}
-
-.searchSection {
   height: 100%;
   display: flex;
   align-items: center;
@@ -108,6 +98,7 @@ header {
   gap: 0.5em;
   font-family: "kaushan";
   align-items: center;
+  margin-bottom: -0.3em;
 }
 
 img {
@@ -119,6 +110,8 @@ img {
   text-align: center;
   border: 0.1em solid rgba(0, 0, 0, 0.581);
   border-radius: 0.3em;
+  width: 15em;
+  font-size: 1.5rem;
 }
 
 .search {
