@@ -94,7 +94,7 @@ body {
 .searchSection {
   width: 50em;
   height: 100%;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -124,7 +124,7 @@ img {
 }
 
 .mainContent {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 50vw;
   height: 100%;
@@ -157,18 +157,18 @@ img {
   width: 50vw;
   height: 100%;
   margin-left: auto;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
 .today,
-.tommorow,
+.tomorrow,
 .overmorrow {
   font-size: 3rem;
 }
 
 .todayCondition,
-.tommorowCondition,
+.tomorrowCondition,
 .overmorrowCondition {
   font-size: 2rem;
 }
