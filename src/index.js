@@ -2,12 +2,6 @@ import "./styles.css";
 import getWeatherData from "./apiHandler";
 
 const locationInput = document.querySelector(".location");
-// const searchButton = document.querySelector(".search");
-
-// searchButton.addEventListener("", () => {
-//   const location = locationInput.value;
-//   getWeatherData(location);
-// });
 
 locationInput.addEventListener("keyup", (event) => {
   if (event.key === "Enter") {
@@ -16,4 +10,4 @@ locationInput.addEventListener("keyup", (event) => {
   }
 });
 
-getWeatherData("pasig");
+// getWeatherData("pasig");

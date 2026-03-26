@@ -6,9 +6,32 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="content">
-      <header>Odin Weather <img src="./cloud.svg" /></header>
+    <section class="searchSection">
+      <header>Odin Weather <img src="./svg/cloud.svg" alt="cloud" /></header>
       <input type="text" class="location" />
-    </div>
+    </section>
+    <section class="mainContent">
+      <div class="weatherHeader">
+        <div class="temperature">40 C</div>
+        <div class="time">17:00</div>
+      </div>
+      <div class="cityHeader">
+        <div class="city">Pasig</div>
+        <div class="description">Partially Cloudly Throughout the Day</div>
+      </div>
+    </section>
+    <section class="sideContent">
+      <div class="calendar">
+        <div class="today">June 16</div>
+        <div class="todayCondition">Cloudly</div>
+        <div class="tommorow">June 16</div>
+        <div class="tommorowCondition">Cloudly</div>
+        <div class="overmorrow">June 16</div>
+        <div class="overmorrowCondition">Cloudly</div>
+      </div>
+      <div class="exit">
+        <button class="back"><img src="./svg/exit.svg" alt="exit" /></button>
+      </div>
+    </section>
   </body>
 </html>

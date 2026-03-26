@@ -70,8 +70,16 @@ h6 {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "roboto";
+  src:
+    url("fonts/roboto-regular-webfont.woff") format("woff"),
+    url("fonts/roboto-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  padding: 5em 0;
   display: flex;
   background-image: linear-gradient(to bottom, #4d6da3, #1d293d);
   justify-content: center;
@@ -79,13 +87,14 @@ body {
 }
 
 * {
+  font-family: "roboto";
   color: white;
 }
 
-.content {
+.searchSection {
   width: 50em;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -114,6 +123,66 @@ img {
   font-size: 1.5rem;
 }
 
-.search {
-  color: black;
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 100%;
+  padding: 4em;
+}
+
+.temperature {
+  font-size: 5rem;
+  margin-bottom: -0.25em;
+  font-weight: lighter;
+}
+
+.time,
+.description {
+  font-size: 2rem;
+}
+
+.cityHeader {
+  margin-top: auto;
+}
+
+.city {
+  font-family: "kaushan";
+  font-size: 5rem;
+}
+
+.sideContent {
+  padding: 5em 4em;
+  background-image: linear-gradient(to bottom, #7a8cab, #4d6da3);
+  width: 50vw;
+  height: 100%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.today,
+.tommorow,
+.overmorrow {
+  font-size: 3rem;
+}
+
+.todayCondition,
+.tommorowCondition,
+.overmorrowCondition {
+  font-size: 2rem;
+}
+
+.exit {
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.back {
+  background: none;
+  border: none;
+}
+
+.back img {
+  height: 2em;
 }
